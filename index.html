@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Financeiro</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <a href="" id="img">
+            <img src="./imgs/sinoalert.svg" alt="">
+        </a>
+        <a href="">
+            <img src="./imgs/chat.svg" alt="">
+        </a>
+        <a href="">
+            <img src="./imgs/configuração.svg" alt="">
+        </a>
+    </div>
+    <div class="duasdivis">
+        <div class="container">
+            <h1 id="bem-vindo"> Bem Vindo, Duarte <span id="username"></span>!</h1>
+            <div class="containerr">
+                <div class="saldo">
+                    <h3> Saldo Atual:</h3>
+                    <div class="valor">
+                        <img src="./imgs/cifrão.svg" alt=""> R$ 28.064,00
+                    </div>
+                </div>
+                <div class="Histrans">
+                    <div class="Histran">
+                        <a href="#" class="logo" onclick="abrirHistorico()">
+                        <img src="./imgs/historico.svg" alt="">
+                        <p>HISTÓRICO</p>
+                    </a>
+                    </div>
+                    <div class="Histran">
+                        <a href="#" class="logo" onclick="abrirTransferencia()">
+                        <img src="./imgs/transferencia.svg" alt="">
+                        <p>TRANSFERÊNCIA</p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="balancegrafico">
+                <a href="#" class="grafico">
+                <h6>Balance</h6>
+                </a>
+                <div id="graph-container"></div>
+            </div>
+        </div>
+        <div class="recebimentos">
+            <H1>ULTIMOS RECEBIMENTOS</H1>
+        </div>
+    </div>
+</body>
+
+</html>
